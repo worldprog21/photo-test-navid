@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sunset Over Mountains</title>
+                <author>John Doe</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Published on 2023-06-15</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>A high-resolution photograph capturing a sunset over the mountains.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>This photograph captures the serene beauty of a sunset over the mountains, showcasing the vibrant colors of the sky as the sun sets behind the peaks.</p>
+        </body>
+    </text>
+</TEI>

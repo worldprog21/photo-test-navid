@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/camera.ico" type="images/x-icon">
+    <!-- Custom CSS for background image in hero section -->
+    <!-- Link to custom JavaScript file -->
+    <script src="js/scripts.js" defer></script>
+    <!-- Load Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+        .hero {
+            background: url('images/4.jpg') no-repeat center center;
+            background-size: cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            border: 100px;
+            color: rgb(34, 29, 29);
+        }
+
+        .hero h1,
+        .hero p {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+    <!-- Link to custom JavaScript file -->
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Aks Khaneh</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="browse.html">Browse Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="collection.html">Photo Collection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="item.html">Single Photo</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-start">
+        <div class="container">
+            <h1 class="display-3">House of Photo</h1>
+            <p class="lead">History of photography in Iran.</p>
+            <form class="form-inline justify-content-start mt-4">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Photos" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Introduction Section -->
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to our world</h1>
+            <p class="lead">This site is a small collection of Iran photography history & museum.</p>
+            <hr class="my-4">
+            <p>You can follow my work on the below site.</p>
+            <a class="btn btn-primary btn-lg" href="https://sunarmor.wixsite.com/khorshidjoshan" role="button">Khorshid
+                Joshan Portfolio</a>
+        </div>
+
+
+
+
+
+        <!-- Collections Section -->
+        <section class="latest-news my-2">
+            <h2 class="text-center">Collections</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">New Exhibition</h5>
+                            <p class="card-text">Join us for a new exhibition featuring event photography.</p>
+                            <a href="collections.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Photography Contest</h5>
+                            <p class="card-text">Submit your best photos to our annual photography contest.</p>
+                            <a href="collections.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Workshops</h5>
+                            <p class="card-text">Join our workshops to improve your photography skills.</p>
+                            <a href="collections.html" class="btn btn-primary">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container mt-5">
+            <h1>Other museum</h1>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <a href="https://irannationalmuseum.ir/en/" class="card-link">
+                        <div class="card">
+                            <img src="images/museums/national 01.webp" class="card-img-top" alt="Image 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Iran National Museum</h5>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://www.iransafar.co/iran-national-jewels-museum/" class="card-link">
+                        <div class="card">
+                            <img src="images/museums/jewelry.jpeg" class="card-img-top" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Treasury of National Jewels</h5>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://galleryinfo.ir/Gallery/fa/247" class="card-link">
+                        <div class="card">
+                            <img src="images/museums/Esfahan museum.webp" class="card-img-top" alt="Image 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Esfahan Art contemporary museum</h5>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Google Charts Pie Chart -->
+            <div class="container">
+                <h2>Site Visits Overview</h2>
+                <div id="piechart" style="width: 900px; height: 500px;"></div>
+            </div>
+
+            <!-- Stay Informed Section -->
+            <section class="stay-informed mb-5 text-center">
+                <h2>Stay Informed</h2>
+                <p>Get the latest news and updates delivered to your inbox.</p>
+                <form class="form-inline justify-content-center mt-4">
+                    <input class="form-control mr-sm-2" type="email" placeholder="Enter your email" aria-label="Email">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Subscribe</button>
+                </form>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-light py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">My Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Map</h5>
+                        <ul class="list-unstyled">
+                            <li><a
+                                    href="https://www.google.com/maps/place/National+Art+Museum/@35.6929048,51.4323727,15z/data=!4m6!3m5!1s0x3f8e022712a5bad7:0xdd6da030924cda27!8m2!3d35.6929048!4d51.4323727!16s%2Fg%2F1q5bmxlms?entry=ttu">Iran
+                                    National museum</a></li>
+                            <li><a
+                                    href="https://www.google.com/maps/place/Treasury+of+National+Jewels/@35.6936223,51.4193597,15z/data=!4m6!3m5!1s0x3f8e019033ef037f:0xbcadc1fcf0bb59bd!8m2!3d35.6936223!4d51.4193597!16s%2Fg%2F1226mnt7?entry=ttu">Treasury
+                                    of National jewelry</a></li>
+                            <li><a
+                                    href="https://www.google.com/maps/place/Isfahan's+National+Art+Museum/@32.6494133,51.6629344,15z/data=!4m6!3m5!1s0x3fbc352db8e55eb5:0x9a703e336082e17f!8m2!3d32.6494133!4d51.6629344!16s%2Fg%2F11spgxw2zf?entry=ttu">Esfahan
+                                    art contemporary museum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Support</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                        <button class="btn btn-primary mt-3">Donate</button>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p class="mb-0">&copy; 2024 Photography Portfolio. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
